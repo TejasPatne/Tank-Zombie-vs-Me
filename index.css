@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    /* background: url(image/background.jpg); */
+    background: url(image/background.jpg);
+    background: linear-gradient(rgb(29, 3, 78),rgb(25, 145, 224));
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;/* horizontally centering*/
+    align-items: center;/* vertically centering*/
+}
+#board{
+    /* background: linear-gradient(yellow,green); */
+    background: url(image/background2);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    width: 180vmin;
+    height: 90vmin;    
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(36, 1fr);
+}
+.tank{
+    background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
+    background-color: green;
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+.bullet{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+    transform: scale(0.5);
+}
+.player{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+.brick{
+    /* background: linear-gradient(red, purple); */
+    background-color:darksalmon;
+    border: .25vmin solid black;
+    /* border-radius: 8px; */
+}
+.zombie{
+    background: linear-gradient(rgb(3, 78, 22), rgb(78, 212, 25));
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
